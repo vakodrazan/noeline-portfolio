@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;;;AAGJ;AAAA;AAAA;AAAA;EAII","file":"noeline-portfolio.80ee2152.css","sourceRoot":"..","sourcesContent":["body {\r\n    margin: 0;\r\n    background-color: #F2F2F2;\r\n}\r\n\r\nimg {\r\n    max-width: 100%;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4 {\r\n    margin: 0;\r\n}"]}

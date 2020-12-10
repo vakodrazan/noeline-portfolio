@@ -1,0 +1,45 @@
+@mixin flex-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    @include flex-layout();
+
+    .navigation {
+        @include flex-layout();
+
+        @media (min-width: 1140px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .about {
+        @include flex-layout();
+    }
+
+    .description {
+        @include flex-layout();
+    }
+
+    .contacts {
+        @include flex-layout();
+    }
+
+    @media (min-width: 1140px) {
+        flex-direction: row;
+
+        h1 {
+            width: 30%;
+
+            img {
+                width: 271px;
+            }
+        }
+    }
+}

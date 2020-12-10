@@ -1,0 +1,47 @@
+.header {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 1140px) {
+  .header .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header .about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 1140px) {
+  .header {
+    flex-direction: row;
+  }
+  .header h1 {
+    width: 30%;
+  }
+  .header h1 img {
+    width: 271px;
+  }
+}
+
+/*# sourceMappingURL=/noeline-portfolio.e31bb0bc.css.map */

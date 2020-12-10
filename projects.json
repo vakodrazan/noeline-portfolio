@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Photograph",
+        "url": "https://photograph-assessment.netlify.app/",
+        "code": "https://github.com/vakodrazan/front-end-finals",
+        "picture": "https://iili.io/KoEJbn.png",
+        "id": 1604657574337,
+        "description": "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+    },
+    {
+        "title": "My Team Page",
+        "url": "https://my-team-page-design.netlify.app/",
+        "code": "https://github.com/vakodrazan/my_team_pages",
+        "picture": "https://iili.io/KoEHOX.png",
+        "id": 1604657622213,
+        "description": "In this project, I work with HTML and SASS to create a responsive page."
+    },
+    {
+        "title": "Birthday APP",
+        "url": "https://list-of-birthday-app.netlify.app/",
+        "code": "https://github.com/vakodrazan/birthday-app",
+        "picture": "https://iili.io/KoE2xs.png",
+        "id": 1604657646561,
+        "description": "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
+    },
+    {
+        "title": "Country Quiz",
+        "url": "https://country-quiz-noeline.netlify.app/",
+        "code": "https://github.com/vakodrazan/country-quiz",
+        "picture": "https://iili.io/KoE9Rt.png",
+        "id": 1604657686675,
+        "description": "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
+    }
+]

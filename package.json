@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "sass": "^1.30.0"
+  },
+  "name": "noeline-portfolio",
+  "description": "Noeline's personal portfolio.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vakodrazan/noeline-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vakodrazan/noeline-portfolio/issues"
+  },
+  "homepage": "https://github.com/vakodrazan/noeline-portfolio#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
