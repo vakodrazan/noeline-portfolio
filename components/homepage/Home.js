@@ -3,12 +3,16 @@ import Contact from '../contact/Contact'
 
 function Home() {
     return (
-        <div>
+        <main>
             <h3>Noeline Marie</h3>
             <span>Front-end developer</span>
+            <div>
+                <p>
+                    Thinking ability will safeguard you.
+                </p>
+            </div>
             <Contact />
-
-        </div>
+        </main>
     )
 }
 

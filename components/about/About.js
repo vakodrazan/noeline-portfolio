@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import noeline from "../../assets/noeline.png";
 
 function About() {
     return (
@@ -6,6 +7,7 @@ function About() {
             <header>
                 <h2>Noeline Marie</h2>
             </header>
+            <img src={noeline} alt="Noeline Marie" />
             <p>
                 My name is Noeline. I am from Madagascar.
             </p>

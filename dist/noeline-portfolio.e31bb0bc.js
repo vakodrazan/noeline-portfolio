@@ -33853,7 +33853,9 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"components/about/About.js":[function(require,module,exports) {
+},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"assets/noeline.png":[function(require,module,exports) {
+module.exports = "/noeline.c910a038.png";
+},{}],"components/about/About.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33863,17 +33865,22 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _noeline = _interopRequireDefault(require("../../assets/noeline.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function About() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Noeline Marie")), /*#__PURE__*/_react.default.createElement("p", null, "My name is Noeline. I am from Madagascar."), /*#__PURE__*/_react.default.createElement("p", null, "I am a Junior front-end developer at ", /*#__PURE__*/_react.default.createElement("a", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h2", null, "Noeline Marie")), /*#__PURE__*/_react.default.createElement("img", {
+    src: _noeline.default,
+    alt: "Noeline Marie"
+  }), /*#__PURE__*/_react.default.createElement("p", null, "My name is Noeline. I am from Madagascar."), /*#__PURE__*/_react.default.createElement("p", null, "I am a Junior front-end developer at ", /*#__PURE__*/_react.default.createElement("a", {
     href: "https://onja.org"
   }, "Onja"), " Madagascar. I enjoyed using my skills to contribute to the exciting technological advance that will happen in the future. I am enjoying myself being involved to make a change to the world with a meaningful job as a developer."), /*#__PURE__*/_react.default.createElement("p", null, "I love dancing. I usually spend my free time dancing and hanging out with friends."));
 }
 
 var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/contact/Contact.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../assets/noeline.png":"assets/noeline.png"}],"components/contact/Contact.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33886,18 +33893,26 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Contact() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("address", {
+  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("address", {
     className: "contacts"
-  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("a", {
     className: "contact-list",
     href: "mailto:noeline.onja@gmail.com"
-  }, /*#__PURE__*/_react.default.createElement("span", null, "noeline.onja@gmail.com"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "ri-mail-line"
+  })), /*#__PURE__*/_react.default.createElement("a", {
     href: "tel:+261345 142 810"
-  }, /*#__PURE__*/_react.default.createElement("span", null, "(+261)345 142 810"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "ri-contacts-line"
+  })), /*#__PURE__*/_react.default.createElement("a", {
     href: "https://www.facebook.com/noeline.amelia.1"
-  }, "Facebook")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "ri-facebook-circle-fill"
+  })), /*#__PURE__*/_react.default.createElement("a", {
     href: "https://github.com/vakodrazan"
-  }, "Github"))));
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "ri-github-fill"
+  }))));
 }
 
 var _default = Contact;
@@ -34062,6 +34077,8 @@ function Header() {
   }, /*#__PURE__*/_react.default.createElement("nav", {
     className: "navigation"
   }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/"
+  }, "Home")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/about"
   }, "About")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/design"
@@ -34087,7 +34104,7 @@ var _Contact = _interopRequireDefault(require("../contact/Contact"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer"), /*#__PURE__*/_react.default.createElement(_Contact.default, null));
+  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h3", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you.")), /*#__PURE__*/_react.default.createElement(_Contact.default, null));
 }
 
 var _default = Home;
