@@ -33880,7 +33880,7 @@ function About() {
 
 var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../../assets/noeline.png":"assets/noeline.png"}],"components/contact/Contact.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../assets/noeline.png":"assets/noeline.png"}],"components/footer/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33892,8 +33892,8 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Contact() {
-  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("address", {
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("address", {
     className: "contacts"
   }, /*#__PURE__*/_react.default.createElement("a", {
     className: "contact-list",
@@ -33915,9 +33915,29 @@ function Contact() {
   }))));
 }
 
+var _default = Footer;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"components/contact/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Footer = _interopRequireDefault(require("../footer/Footer"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Contact() {
+  return /*#__PURE__*/_react.default.createElement("section", null, /*#__PURE__*/_react.default.createElement("h3", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("p", null, "Get in touch with Noeline"), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+}
+
 var _default = Contact;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"projects.json":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../footer/Footer":"components/footer/Footer.js"}],"projects.json":[function(require,module,exports) {
 module.exports = [{
   "title": "Photograph",
   "url": "https://photograph-assessment.netlify.app/",
@@ -34099,9 +34119,9 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Contact = _interopRequireDefault(require("../contact/Contact"));
-
 var _noeline = _interopRequireDefault(require("../../assets/noeline.png"));
+
+var _Footer = _interopRequireDefault(require("../footer/Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34109,12 +34129,12 @@ function Home() {
   return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _noeline.default,
     alt: "Noeline Marie"
-  })), /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer"), /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you."), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Contact.default, null)));
+  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you."), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
 }
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../contact/Contact":"components/contact/Contact.js","../../assets/noeline.png":"assets/noeline.png"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../assets/noeline.png":"assets/noeline.png","../footer/Footer":"components/footer/Footer.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

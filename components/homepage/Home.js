@@ -1,6 +1,6 @@
-import React from 'react'
-import Contact from '../contact/Contact'
+import React from 'react';
 import noeline from "../../assets/noeline.png";
+import Footer from '../footer/Footer';
 
 function Home() {
     return (
@@ -8,13 +8,15 @@ function Home() {
             <h3>
                 <img src={noeline} alt="Noeline Marie" />
             </h3>
-            <strong>Noeline Marie</strong>
-            <span>Front-end developer</span>
+            <div>
+                <strong>Noeline Marie</strong>
+                <span>Front-end developer</span>
+            </div>
             <p>
                 Thinking ability will safeguard you.
             </p>
             <footer>
-                <Contact />
+                <Footer />
             </footer>
         </main>
     )
