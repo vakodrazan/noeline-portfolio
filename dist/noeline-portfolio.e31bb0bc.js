@@ -34028,7 +34028,7 @@ module.exports = [{
   "title": "Birthday APP",
   "url": "https://list-of-birthday-app.netlify.app/",
   "code": "https://github.com/vakodrazan/birthday-app",
-  "picture": "https://iili.io/KxZnwB.png",
+  "picture": "https://iili.io/KIY34p.png",
   "id": 1604657646561,
   "description": "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
 }, {
@@ -34063,15 +34063,19 @@ function Design() {
     className: "design-items"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: project.picture
-  }), /*#__PURE__*/_react.default.createElement("p", null, project.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+  }), /*#__PURE__*/_react.default.createElement("p", null, project.description), /*#__PURE__*/_react.default.createElement("div", {
+    className: "buttons"
+  }, /*#__PURE__*/_react.default.createElement("a", {
     href: project.url,
     alt: project.title
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "demo",
     "aria-label": `See the demo of ${project.title}`
   }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
     href: project.code,
     alt: project.titles
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "code",
     "aria-label": `See the code for ${project.title}`
   }, "Code"))))));
 }

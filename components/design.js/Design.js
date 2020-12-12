@@ -11,13 +11,13 @@ function Design() {
                 <section key={project.id} className="design-items">
                     <img src={project.picture} />
                     <p>{project.description}</p>
-                    <div>
-                    <a href={project.url} alt={project.title} >
-                        <button aria-label={`See the demo of ${project.title}`}>Demo</button>
-                    </a>
-                    <a href={project.code} alt={project.titles} >
-                        <button aria-label={`See the code for ${project.title}`}>Code</button>
-                    </a>
+                    <div className="buttons">
+                        <a href={project.url} alt={project.title} >
+                            <button className="demo" aria-label={`See the demo of ${project.title}`}>Demo</button>
+                        </a>
+                        <a href={project.code} alt={project.titles} >
+                            <button className="code" aria-label={`See the code for ${project.title}`}>Code</button>
+                        </a>
                     </div>
                 </section>
             ))}
