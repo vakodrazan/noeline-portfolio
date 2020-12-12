@@ -34101,15 +34101,20 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Contact = _interopRequireDefault(require("../contact/Contact"));
 
+var _noeline = _interopRequireDefault(require("../../assets/noeline.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home() {
-  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h3", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you.")), /*#__PURE__*/_react.default.createElement(_Contact.default, null));
+  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _noeline.default,
+    alt: "Noeline Marie"
+  })), /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer"), /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you."), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Contact.default, null)));
 }
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../contact/Contact":"components/contact/Contact.js"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../contact/Contact":"components/contact/Contact.js","../../assets/noeline.png":"assets/noeline.png"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
