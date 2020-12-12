@@ -33937,71 +33937,7 @@ function Contact() {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../footer/Footer":"components/footer/Footer.js"}],"projects.json":[function(require,module,exports) {
-module.exports = [{
-  "title": "Photograph",
-  "url": "https://photograph-assessment.netlify.app/",
-  "code": "https://github.com/vakodrazan/front-end-finals",
-  "picture": "https://iili.io/KoEJbn.png",
-  "id": 1604657574337,
-  "description": "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
-}, {
-  "title": "My Team Page",
-  "url": "https://my-team-page-design.netlify.app/",
-  "code": "https://github.com/vakodrazan/my_team_pages",
-  "picture": "https://iili.io/KoEHOX.png",
-  "id": 1604657622213,
-  "description": "In this project, I work with HTML and SASS to create a responsive page."
-}, {
-  "title": "Birthday APP",
-  "url": "https://list-of-birthday-app.netlify.app/",
-  "code": "https://github.com/vakodrazan/birthday-app",
-  "picture": "https://iili.io/KxZnwB.png",
-  "id": 1604657646561,
-  "description": "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
-}, {
-  "title": "Country Quiz",
-  "url": "https://country-quiz-noeline.netlify.app/",
-  "code": "https://github.com/vakodrazan/country-quiz",
-  "picture": "https://iili.io/KoE9Rt.png",
-  "id": 1604657686675,
-  "description": "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
-}];
-},{}],"components/design.js/Design.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _projects = _interopRequireDefault(require("../../projects.json"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Design() {
-  return /*#__PURE__*/_react.default.createElement("article", null, _projects.default.map(project => /*#__PURE__*/_react.default.createElement("section", {
-    key: project.id
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: project.picture
-  }), /*#__PURE__*/_react.default.createElement("p", null, project.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: project.url,
-    alt: project.title
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    "aria-label": `See the demo of ${project.title}`
-  }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
-    href: project.code,
-    alt: project.titles
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    "aria-label": `See the code for ${project.title}`
-  }, "Code"))))));
-}
-
-var _default = Design;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","../../projects.json":"projects.json"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../footer/Footer":"components/footer/Footer.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -34068,7 +34004,81 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"components/header/header.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"components/design.js/design.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"projects.json":[function(require,module,exports) {
+module.exports = [{
+  "title": "Photograph",
+  "url": "https://photograph-assessment.netlify.app/",
+  "code": "https://github.com/vakodrazan/front-end-finals",
+  "picture": "https://iili.io/KoEJbn.png",
+  "id": 1604657574337,
+  "description": "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+}, {
+  "title": "My Team Page",
+  "url": "https://my-team-page-design.netlify.app/",
+  "code": "https://github.com/vakodrazan/my_team_pages",
+  "picture": "https://iili.io/KoEHOX.png",
+  "id": 1604657622213,
+  "description": "In this project, I work with HTML and SASS to create a responsive page."
+}, {
+  "title": "Birthday APP",
+  "url": "https://list-of-birthday-app.netlify.app/",
+  "code": "https://github.com/vakodrazan/birthday-app",
+  "picture": "https://iili.io/KxZnwB.png",
+  "id": 1604657646561,
+  "description": "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
+}, {
+  "title": "Country Quiz",
+  "url": "https://country-quiz-noeline.netlify.app/",
+  "code": "https://github.com/vakodrazan/country-quiz",
+  "picture": "https://iili.io/KoE9Rt.png",
+  "id": 1604657686675,
+  "description": "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
+}];
+},{}],"components/design.js/Design.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./design.scss");
+
+var _projects = _interopRequireDefault(require("../../projects.json"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Design() {
+  return /*#__PURE__*/_react.default.createElement("article", {
+    className: "design"
+  }, _projects.default.map(project => /*#__PURE__*/_react.default.createElement("section", {
+    key: project.id,
+    className: "design-items"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: project.picture
+  }), /*#__PURE__*/_react.default.createElement("p", null, project.description), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: project.url,
+    alt: project.title
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    "aria-label": `See the demo of ${project.title}`
+  }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
+    href: project.code,
+    alt: project.titles
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    "aria-label": `See the code for ${project.title}`
+  }, "Code"))))));
+}
+
+var _default = Design;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./design.scss":"components/design.js/design.scss","../../projects.json":"projects.json"}],"components/header/header.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

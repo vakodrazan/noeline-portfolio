@@ -1,12 +1,14 @@
 import React from 'react'
 
+import "./design.scss"
+
 import projects from "../../projects.json";
 
 function Design() {
     return (
-        <article>
+        <article className="design">
             {projects.map(project => (
-                <section key={project.id}>
+                <section key={project.id} className="design-items">
                     <img src={project.picture} />
                     <p>{project.description}</p>
                     <div>
