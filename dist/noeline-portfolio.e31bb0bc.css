@@ -1,3 +1,18 @@
+footer {
+  font-size: 20px;
+}
+footer a {
+  font-size: 50px;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer .facebook {
+  color: blue;
+}
+footer .mail {
+  color: #f87070;
+}
 .design {
   display: grid;
   grid-template-columns: 350px;
