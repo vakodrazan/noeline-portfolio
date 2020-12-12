@@ -1,8 +1,8 @@
 import React from 'react'
 
-import projects from "../projects.json";
+import projects from "../../projects.json";
 
-function Projects() {
+function Design() {
     return (
         <article>
             {projects.map(project => (
@@ -23,4 +23,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default Design
