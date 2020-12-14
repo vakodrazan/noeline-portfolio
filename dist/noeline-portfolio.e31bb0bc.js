@@ -34049,6 +34049,13 @@ module.exports = [{
   "picture": "https://iili.io/KoE9Rt.png",
   "id": 1604657686675,
   "description": "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
+}, {
+  "title": "Hit parade",
+  "url": "https://hit-parade-noeline.netlify.app/",
+  "code": "https://github.com/vakodrazan/hit-parade-react",
+  "picture": "https://iili.io/KTOo8X.png",
+  "id": 1604657686082,
+  "description": "In this project, this work is done by React and a local json file to store the data that is needed."
 }];
 },{}],"components/design.js/Design.js":[function(require,module,exports) {
 "use strict";
@@ -34240,7 +34247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51580" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51082" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
