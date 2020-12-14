@@ -34053,7 +34053,7 @@ module.exports = [{
   "title": "Hit parade",
   "url": "https://hit-parade-noeline.netlify.app/",
   "code": "https://github.com/vakodrazan/hit-parade-react",
-  "picture": "https://iili.io/KTOo8X.png",
+  "picture": "https://iili.io/KT8vgp.png",
   "id": 1604657686082,
   "description": "In this project, this work is done by React and a local json file to store the data that is needed."
 }];
@@ -34247,7 +34247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51082" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53466" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
