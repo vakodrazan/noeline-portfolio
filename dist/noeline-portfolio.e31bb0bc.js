@@ -34027,14 +34027,14 @@ module.exports = [{
   "code": "https://github.com/vakodrazan/front-end-finals",
   "picture": "https://iili.io/KoEJbn.png",
   "id": 1604657574337,
-  "description": "In this project, I work with HTML and CSS to create a responsive page. This is for practising the use of element."
+  "description": "In this project, I work with HTML and CSS to create a responsive page. Mobile device view sets as a default screen."
 }, {
-  "title": "My Team Page",
-  "url": "https://my-team-page-design.netlify.app/",
-  "code": "https://github.com/vakodrazan/my_team_pages",
-  "picture": "https://iili.io/KoEHOX.png",
+  "title": "Edie Homepage",
+  "url": "https://edie-homepage-noeline.netlify.app/",
+  "code": "https://github.com/vakodrazan/edie-homepage",
+  "picture": "https://iili.io/KT7Kwg.png",
   "id": 1604657622213,
-  "description": "In this project, I work with HTML and SASS to create a responsive page."
+  "description": "In this project, I work with HTML and SASS to create a responsive page. Mobile device view sets as a default screen."
 }, {
   "title": "Birthday APP",
   "url": "https://list-of-birthday-app.netlify.app/",
@@ -34240,7 +34240,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51070" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51580" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
