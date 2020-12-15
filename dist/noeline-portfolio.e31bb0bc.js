@@ -34025,36 +34025,41 @@ module.exports = [{
   "title": "Photograph",
   "url": "https://photograph-assessment.netlify.app/",
   "code": "https://github.com/vakodrazan/front-end-finals",
-  "picture": "https://iili.io/KoEJbn.png",
+  "picture": "https://iili.io/KuVwN4.png",
   "id": 1604657574337,
+  "designed": "HTML and CSS (SASS)",
   "description": "In this project, I work with HTML and CSS to create a responsive page. Mobile device view sets as a default screen."
 }, {
   "title": "Edie Homepage",
   "url": "https://edie-homepage-noeline.netlify.app/",
   "code": "https://github.com/vakodrazan/edie-homepage",
-  "picture": "https://iili.io/KT7Kwg.png",
+  "picture": "https://iili.io/KuVhHG.png",
   "id": 1604657622213,
+  "designed": "HTML and CSS (SASS)",
   "description": "In this project, I work with HTML and SASS to create a responsive page. Mobile device view sets as a default screen."
 }, {
   "title": "Birthday APP",
   "url": "https://list-of-birthday-app.netlify.app/",
   "code": "https://github.com/vakodrazan/birthday-app",
-  "picture": "https://iili.io/KIY34p.png",
+  "picture": "https://iili.io/KuVMKX.png",
   "id": 1604657646561,
+  "designed": "Vanilla Javascript and HTML",
   "description": "In this project, I work with Vanilla Javascript. You can see any list item. It is all about, adding a new item to list. It allows to delete any item and edit as well.  "
 }, {
   "title": "Country Quiz",
   "url": "https://country-quiz-noeline.netlify.app/",
   "code": "https://github.com/vakodrazan/country-quiz",
-  "picture": "https://iili.io/KoE9Rt.png",
+  "picture": "https://iili.io/KuVVln.png",
   "id": 1604657686675,
+  "designed": "React",
   "description": "In this project, I work with React. It is all about fetching data from a API that is not exactly the real API but still go deeper. It showing the question randomly with the choice of answer and must be included the right answers."
 }, {
   "title": "Hit parade",
   "url": "https://hit-parade-noeline.netlify.app/",
   "code": "https://github.com/vakodrazan/hit-parade-react",
-  "picture": "https://iili.io/KT8vgp.png",
+  "picture": "https://iili.io/KuVNDl.png",
   "id": 1604657686082,
+  "designed": "React",
   "description": "In this project, this work is done by React and a local json file to store the data that is needed."
 }];
 },{}],"components/design.js/Design.js":[function(require,module,exports) {
@@ -34247,7 +34252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53466" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58539" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
