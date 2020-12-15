@@ -57,11 +57,10 @@
     }
 
     @media (min-width: 750px) {
-        max-width: 750px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
     @media (min-width: 1440px) {
         max-width: 1440px;
-        grid-template-columns: repeat(auto-fit, minmax(350px));
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

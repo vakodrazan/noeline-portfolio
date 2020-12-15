@@ -34090,13 +34090,15 @@ function Design() {
     className: "buttons"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: project.url,
-    alt: project.title
+    alt: project.title,
+    target: "_blank"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "demo",
     "aria-label": `See the demo of ${project.title}`
   }, "Demo")), /*#__PURE__*/_react.default.createElement("a", {
     href: project.code,
-    alt: project.titles
+    alt: project.titles,
+    target: "_blank"
   }, /*#__PURE__*/_react.default.createElement("button", {
     className: "code",
     "aria-label": `See the code for ${project.title}`

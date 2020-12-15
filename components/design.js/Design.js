@@ -12,10 +12,10 @@ function Design() {
                     <img src={project.picture} />
                     <p>{project.description}</p>
                     <div className="buttons">
-                        <a href={project.url} alt={project.title} >
+                        <a href={project.url} alt={project.title} target="_blank" >
                             <button className="demo" aria-label={`See the demo of ${project.title}`}>Demo</button>
                         </a>
-                        <a href={project.code} alt={project.titles} >
+                        <a href={project.code} alt={project.titles} target="_blank" >
                             <button className="code" aria-label={`See the code for ${project.title}`}>Code</button>
                         </a>
                     </div>
