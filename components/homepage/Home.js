@@ -12,9 +12,7 @@ function Home() {
                 <strong>Noeline Marie</strong>
                 <span>Front-end developer</span>
             </div>
-            <p>
-                Thinking ability will safeguard you.
-            </p>
+            
             <footer>
                 <Footer />
             </footer>

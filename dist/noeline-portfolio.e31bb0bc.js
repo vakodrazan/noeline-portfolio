@@ -33967,30 +33967,22 @@ require("./footer.scss");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Footer() {
-  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("address", {
+  return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("ul", {
     className: "contacts"
-  }, /*#__PURE__*/_react.default.createElement("a", {
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     className: "mail",
     href: "mailto:noeline.onja@gmail.com",
     target: "_blank"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "ri-mail-line"
-  })), /*#__PURE__*/_react.default.createElement("a", {
-    href: "tel:+261345 142 810"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "ri-contacts-line"
-  })), /*#__PURE__*/_react.default.createElement("a", {
+  }, "Email")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "tel:+261345142810"
+  }, "Call")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     className: "facebook",
     href: "https://www.facebook.com/noeline.amelia.1",
     target: "_blank"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "ri-facebook-circle-fill"
-  })), /*#__PURE__*/_react.default.createElement("a", {
+  }, "Facebook")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "https://github.com/vakodrazan",
     target: "_blank"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "ri-github-fill"
-  }))));
+  }, "Github"))));
 }
 
 var _default = Footer;
@@ -34168,7 +34160,7 @@ function Home() {
   return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _noeline.default,
     alt: "Noeline Marie"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("p", null, "Thinking ability will safeguard you."), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
+  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, "Noeline Marie"), /*#__PURE__*/_react.default.createElement("span", null, "Front-end developer")), /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement(_Footer.default, null)));
 }
 
 var _default = Home;
@@ -34254,7 +34246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59807" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50568" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
