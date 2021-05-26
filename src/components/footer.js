@@ -6,7 +6,6 @@ import ContentWrapper from "../styles/contentWrapper"
 import Context from "../context"
 import Logo from "./logo"
 import { lightTheme, darkTheme } from "../styles/theme"
-import { footerLinks } from "../../config"
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -59,13 +58,6 @@ const Footer = () => {
             }
           />
         </Link>
-        <div className="footer-links" data-testid="footer-links">
-          {footerLinks.map(({ name, url }, key) => (
-            <StyledLink key={key} to={url} $darkMode={darkMode}>
-              {name}
-            </StyledLink>
-          ))}
-        </div>
       </StyledContentWrapper>
     </StyledFooter>
   )

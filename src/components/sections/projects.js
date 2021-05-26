@@ -70,7 +70,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
       /* Show scrollbar if desktop and wrapper width > viewport width */
       @media (hover: hover) {
-        scrollbar-color: ${({ theme }) => theme.colors.scrollBar} transparent; // Firefox only
+        scrollbar-color: ${({ theme }) => theme.colors.scrollBar} transparen
         &::-webkit-scrollbar {
           display: block;
           -webkit-appearance: none;
@@ -204,13 +204,8 @@ const Projects = ({ content }) => {
   const sectionDetails = content[0].node
   const projects = content.slice(1, content.length)
 
-  // visibleProject is needed to show which project is currently
-  // being viewed in the horizontal slider on mobile and tablet
   const [visibleProject, setVisibleProject] = useState(1)
 
-  // projects don't track the visibility by using the onScreen hook
-  // instead they use react-visibility-sensor, therefore their visibility
-  // is also stored differently
   const [onScreen, setOnScreen] = useState({})
   const handleOnScreen = el => {
     if (!onScreen[el]) {
@@ -225,28 +220,19 @@ const Projects = ({ content }) => {
   }
 
   useEffect(() => {
-    // mobile and tablet only: set first project as visible in the
-    // horizontal slider
     setVisibleProject(1)
-    // required for animations: set visibility for all projects to
-    // "false" initially
     let initial = {}
     projects.forEach(project => {
       initial[project.node.frontmatter.position] = false
     })
     setOnScreen(initial)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  // Required for animating the title
   const tRef = useRef()
   const tOnScreen = useOnScreen(tRef)
   const tVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
-
-  // Required for animating the button
   const bRef = useRef()
   const bOnScreen = useOnScreen(bRef)
   const bVariants = {
@@ -285,9 +271,7 @@ const Projects = ({ content }) => {
                   }
                 >
                   <div className="details">
-                    <div className="category">
-                      {frontmatter.emoji} {frontmatter.category}
-                    </div>
+                    <div className="category">{frontmatter.category}</div>
                     <div className="title">{frontmatter.title}</div>
                     <MDXRenderer>{body}</MDXRenderer>
                     <div className="tags">

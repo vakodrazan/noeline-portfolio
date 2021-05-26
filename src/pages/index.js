@@ -6,9 +6,7 @@ import GlobalStateProvider from "../context/provider"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/sections/hero"
-import Articles from "../components/sections/articles"
 import About from "../components/sections/about"
-import Interests from "../components/sections/interests"
 import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
 import { seoTitleSuffix } from "../../config"
@@ -36,10 +34,7 @@ const IndexPage = ({ data }) => {
           }
         />
         <Hero content={data.hero.edges} />
-        {/* Articles is populated via Medium RSS Feed fetch */}
-        <Articles />
         <About content={data.about.edges} />
-        <Interests content={data.interests.edges} />
         <Projects content={data.projects.edges} />
         <Contact content={data.contact.edges} />
       </Layout>
@@ -71,7 +66,6 @@ export const pageQuery = graphql`
         node {
           body
           frontmatter {
-            greetings
             title
             subtitlePrefix
             subtitle
@@ -140,7 +134,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             category
-            emoji
             external
             github
             screenshot {

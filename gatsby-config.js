@@ -32,7 +32,7 @@ module.exports = {
           trackingId: googleAnalyticsTrackingId,
           cookieName: "gatsby-gdpr-google-analytics",
           anonymize: true,
-          allowAdFeatures: false,
+          // allowAdFeatures: false,
         },
         environments: ["production"], // defines the environments where the tracking should be available
       },

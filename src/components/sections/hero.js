@@ -29,11 +29,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
       margin-bottom: 4rem;
     }
-    .greetings {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
     .emoji {
       margin-left: 0.75rem;
       width: 2.2rem;
@@ -109,27 +104,7 @@ const Hero = ({ content }) => {
           animate={gControls}
           data-testid="animated-heading"
         >
-          <h1 className="title">
-            <div className="greetings">
-              {frontmatter.greetings}
-              <motion.div
-                animate={eControls}
-                style={{ originX: 0.7, originY: 0.7 }}
-              >
-                <Img
-                  className="emoji"
-                  fluid={frontmatter.icon.childImageSharp.fluid}
-                />
-              </motion.div>
-            </div>
-            {frontmatter.title}
-          </h1>
-          <h2 className="subtitle">
-            {frontmatter.subtitlePrefix}{" "}
-            <AnimatedUnderlining animate={uControls} big>
-              {frontmatter.subtitle}
-            </AnimatedUnderlining>
-          </h2>
+          <h1 className="title">{frontmatter.subtitlePrefix}</h1>
           <div className="description">
             <MDXRenderer>{body}</MDXRenderer>
           </div>
