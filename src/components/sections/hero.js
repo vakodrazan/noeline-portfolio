@@ -6,7 +6,6 @@ import { motion, useAnimation } from "framer-motion"
 
 import Context from "../../context/"
 import ContentWrapper from "../../styles/contentWrapper"
-import Underlining from "../../styles/underlining"
 import Social from "../social"
 import { lightTheme, darkTheme } from "../../styles/theme"
 
@@ -56,8 +55,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const AnimatedUnderlining = motion.custom(Underlining)
-
 const Hero = ({ content }) => {
   const { frontmatter, body } = content[0].node
   const { isIntroDone, darkMode } = useContext(Context).state
@@ -69,31 +66,32 @@ const Hero = ({ content }) => {
   const uControls = useAnimation()
 
   // Start Animations after the splashScreen sequence is done
-  useEffect(() => {
-    const pageLoadSequence = async () => {
-      if (isIntroDone) {
-        eControls.start({
-          rotate: [0, -10, 12, -10, 9, 0, 0, 0, 0, 0, 0],
-          transition: { duration: 2.5, loop: 3, repeatDelay: 1 },
-        })
-        await gControls.start({
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0.4 },
-        })
-        await sControls.start({
-          opacity: 1,
-          x: 0,
-        })
-        // Animate underlining to hover state
-        await uControls.start({
-          boxShadow: `inset 0 -2rem 0 ${
-            darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
-          }`,
-          transition: { delay: 0.4, ease: "circOut" },
-        })
-      }
+  const pageLoadSequence = async () => {
+    if (isIntroDone) {
+      eControls.start({
+        rotate: [0, -10, 12, -10, 9, 0, 0, 0, 0, 0, 0],
+        transition: { duration: 1.5, loop: 3, repeatDelay: 1 },
+      })
+      await gControls.start({
+        opacity: 1,
+        y: 0,
+        transition: { delay: 0.2 },
+      })
+      await sControls.start({
+        opacity: 1,
+        x: 0,
+      })
+      // Animate underlining to hover state
+      await uControls.start({
+        boxShadow: `inset 0 -2rem 0 ${
+          darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
+        }`,
+        transition: { delay: 0.4, ease: "circOut" },
+      })
     }
+  }
+
+  useEffect(() => {
     pageLoadSequence()
   }, [isIntroDone, darkMode, eControls, gControls, sControls, uControls])
 
