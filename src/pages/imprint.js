@@ -21,7 +21,7 @@ const StyledSection = styled.section`
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 1rem;
@@ -61,7 +61,7 @@ const Imprint = ({ data }) => {
         />
         <StyledSection id={title}>
           <StyledContentWrapper>
-            <h1 data-testid="heading">{title}</h1>
+            <h2 data-testid="heading">{title}</h2>
             <MDXRenderer>{body}</MDXRenderer>
           </StyledContentWrapper>
         </StyledSection>

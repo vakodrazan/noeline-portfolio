@@ -25,7 +25,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 6rem;
     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
       margin-bottom: 4rem;
     }
@@ -40,7 +39,9 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .title {
+      margin: 0;
       margin-bottom: 1.5rem;
+      font-size: 2rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-bottom: 0;
       }
@@ -104,7 +105,7 @@ const Hero = ({ content }) => {
           animate={gControls}
           data-testid="animated-heading"
         >
-          <h1 className="title">{frontmatter.subtitlePrefix}</h1>
+          <h2 className="title">{frontmatter.subtitlePrefix}</h2>
           <div className="description">
             <MDXRenderer>{body}</MDXRenderer>
           </div>

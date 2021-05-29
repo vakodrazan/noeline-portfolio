@@ -29,6 +29,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .section-title {
       margin-bottom: 2rem;
+      margin: 0;
     }
     .inner-wrapper {
       display: flex;

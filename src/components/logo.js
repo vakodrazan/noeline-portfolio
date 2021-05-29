@@ -4,12 +4,19 @@ import styled from "styled-components"
 
 import { siteShortTitle } from "../../config"
 
-const StyledLogo = styled.div`
+const StyledLogo = styled.h1`
   position: relative;
-  z-index: 13;
+  z-index: 5;
+  line-height: 37px;
+  margin: 0;
+
+  @media (min-width: 600px) {
+    z-index: 13;
+    line-height: unset;
+  }
 
   font-size: ${({ size }) => (size ? size : "1.75rem")};
-  font-weight: 900;
+  font-weight: 700;
   color: ${({ theme, color }) => theme.colors[color] || color};
 
   /* Disable effects when sidebar is open */

@@ -50,6 +50,10 @@ const StyledNav = styled.nav`
   position: relative;
   right: 0;
   margin-left: auto;
+
+  @media (max-width: 375px) {
+    width: 80%;
+  }
   a {
     color: ${({ theme }) => theme.colors.primary};
   }
