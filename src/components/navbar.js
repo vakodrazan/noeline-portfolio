@@ -11,6 +11,7 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 31.25rem;
+    max-width: 30%;
     background: ${({ theme }) => theme.colors.background};
     a {
       color: ${({ theme }) => theme.colors.primary};
@@ -54,7 +55,7 @@ const StyledNav = styled.nav`
 `
 
 const Navbar = () => {
-  const { menu, button } = navLinks
+  const { menu } = navLinks
   return (
     <StyledNav>
       {menu.map(({ name, url }, key) => {
@@ -64,20 +65,6 @@ const Navbar = () => {
           </Link>
         )
       })}
-      {button.useFileName ? (
-        <a
-          className="cta-btn"
-          href={`/${button.fileName}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {button.name}
-        </a>
-      ) : (
-        <Link className="cta-btn" to={button.url}>
-          {button.name}
-        </Link>
-      )}
     </StyledNav>
   )
 }
