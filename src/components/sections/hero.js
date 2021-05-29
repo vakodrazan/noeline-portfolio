@@ -1,7 +1,6 @@
 import React, { useEffect, useContext } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion, useAnimation } from "framer-motion"
 
@@ -42,6 +41,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       margin: 0;
       margin-bottom: 1.5rem;
       font-size: 2rem;
+      line-height: 34px;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-bottom: 0;
       }
