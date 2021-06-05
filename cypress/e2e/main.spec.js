@@ -32,7 +32,7 @@ describe("IndexPage", () => {
 
   it("renders other pages", () => {
     cy.get("#layout-wrapper").then(elem => {
-      if (elem.attr("data-useCookieBar") === "true") {
+      if (elem.attr("data-usecookiebar") === "true") {
         cy.get("button#confirm").click()
         cy.findByTestId("footer-links")
           .findByText(/imprint/i)
@@ -49,7 +49,7 @@ describe("IndexPage", () => {
 
   it("renders cookie bar if activated", () => {
     cy.get("#layout-wrapper").then(elem => {
-      if (elem.attr("data-useCookieBar") === "true") {
+      if (elem.attr("data-usecookiebar") === "true") {
         cy.get("button#confirm").should("exist")
       } else {
         cy.get("button#confirm").should("not.exist")

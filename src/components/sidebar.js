@@ -63,21 +63,10 @@ const StyledNav = styled.nav`
     text-align: center;
     padding: 1.5rem 0;
   }
-  .cta-btn {
-    width: auto;
-    height: auto;
-    margin: 1.5rem auto;
-    padding: 1rem 1.5rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    border-radius: ${({ theme }) => theme.borderRadius};
-    border: 0.125rem solid ${({ theme }) => theme.colors.primary};
-    background: ${({ theme }) => theme.colors.background};
-  }
 `
 
 const Sidebar = ({ open, setOpen }) => {
-  const { menu, button } = navLinks
+  const { menu } = navLinks
   return (
     <>
       <StyledContainer open={open} aria-hidden={!open} tabIndex={open ? 1 : -1}>
@@ -92,25 +81,6 @@ const Sidebar = ({ open, setOpen }) => {
               {name}
             </Link>
           ))}
-          {button.useFileName ? (
-            <a
-              className="cta-btn"
-              href={`/${button.fileName}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setOpen(!open)}
-            >
-              {button.name}
-            </a>
-          ) : (
-            <Link
-              className="cta-btn"
-              to={button.url}
-              onClick={() => setOpen(!open)}
-            >
-              {button.name}
-            </Link>
-          )}
         </StyledNav>
       </StyledContainer>
       <StyledBackdrop open={open} />
