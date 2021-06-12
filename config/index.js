@@ -1,9 +1,9 @@
 module.exports = {
   author: "@noelinemariejeanne",
-  siteTitle: "Noeline Marie Jeanne",
+  siteTitle: "Noeline Marie",
   siteShortTitle: "Noeline Marie",
   siteDescription: "Noeline portfolio",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+  siteUrl: "https://noeline-portfolio.vercel.app/",
   siteLanguage: "en_US",
   siteIcon: "content/noeline.jpg",
   seoTitleSuffix: "Noeline Marie",
