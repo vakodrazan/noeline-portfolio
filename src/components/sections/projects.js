@@ -70,7 +70,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
       /* Show scrollbar if desktop and wrapper width > viewport width */
       @media (hover: hover) {
-        scrollbar-color: ${({ theme }) => theme.colors.scrollBar} transparen
+        scrollbar-color: ${({ theme }) => theme.colors.scrollBar};
         &::-webkit-scrollbar {
           display: block;
           -webkit-appearance: none;
