@@ -50,7 +50,6 @@ module.exports = {
     },
   ],
 
-  //-- NAVIGATION SETTINGS -----
   navLinks: {
     menu: [
       {
