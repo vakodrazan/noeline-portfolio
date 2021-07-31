@@ -14,7 +14,6 @@ import CookieBar from "../components/cookieBar"
 import SplashScreen from "../components/splashScreen"
 import { useCookieBar } from "../../config"
 
-// https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
@@ -30,7 +29,6 @@ const StyledLayoutWrapper = styled.div`
 
 const Layout = ({ children }) => {
   const { isIntroDone } = useContext(Context).state
-  // Enables dark mode if the user's OS has an active dark theme
   const darkModeEnabled = useDarkMode()
   const theme = darkModeEnabled ? darkTheme : lightTheme
 

@@ -22,7 +22,6 @@ const StyledSection = styled(motion.section)`
 const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
-    /* Don't stretch container over the full page width */
     max-width: 45rem;
     height: 100%;
     display: inline-block;
@@ -62,7 +61,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
 const Contact = ({ content }) => {
   const { body, frontmatter } = content[0].node
 
-  // Required for animation
   const ref = useRef()
   const onScreen = useOnScreen(ref)
   const variants = {

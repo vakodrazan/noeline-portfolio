@@ -65,14 +65,11 @@ const AnimatedUnderlining = motion.custom(Underlining)
 const Hero = ({ content }) => {
   const { frontmatter, body } = content[0].node
   const { isIntroDone, darkMode } = useContext(Context).state
-
-  // Controls to orchestrate animations of greetings, emoji, social profiles, underlining
   const gControls = useAnimation()
   const eControls = useAnimation()
   const sControls = useAnimation()
   const uControls = useAnimation()
 
-  // Start Animations after the splashScreen sequence is done
   useEffect(() => {
     const pageLoadSequence = async () => {
       if (isIntroDone) {

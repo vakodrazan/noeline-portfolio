@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components"
 import modernNormalize from "styled-modern-normalize"
 
 const GlobalStyle = createGlobalStyle`
-    
-    // Import normalize.css
+
     ${modernNormalize}
 
     * {

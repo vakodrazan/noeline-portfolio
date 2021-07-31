@@ -65,7 +65,6 @@ const CookieBar = () => {
   const controls = useAnimation()
   const { isIntroDone } = useContext(Context).state
 
-  // Display cookie bar after the splashScreen sequence is done
   useEffect(() => {
     if (isIntroDone) {
       controls.start({

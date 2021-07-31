@@ -28,7 +28,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-// https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
 const StyledBurger = styled.button`
   z-index: 12;
   display: flex;
@@ -119,7 +118,6 @@ const Header = () => {
 
   return (
     <StyledHeader initial={{ opacity: 0, y: -10 }} animate={controls}>
-      {/* add blur class to body when sidebar is opened */}
       <Helmet bodyAttributes={{ class: open ? "blur" : "" }} />
       <StyledContentWrapper>
         <Link to="/" aria-label="Back to homepage">

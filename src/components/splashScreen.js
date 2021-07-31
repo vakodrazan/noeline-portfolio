@@ -61,7 +61,6 @@ const SplashScreen = () => {
       animate={backgroundControls}
       darkMode={state.darkMode}
     >
-      {/* Add splashScreen class to body (prevents scrolling during splashScreen) */}
       <Helmet
         bodyAttributes={{ class: !state.isIntroDone ? "splashScreen" : "" }}
       />

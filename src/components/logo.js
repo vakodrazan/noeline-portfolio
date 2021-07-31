@@ -19,7 +19,6 @@ const StyledLogo = styled.h1`
   font-weight: 700;
   color: ${({ theme, color }) => theme.colors[color] || color};
 
-  /* Disable effects when sidebar is open */
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;

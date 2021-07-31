@@ -69,15 +69,12 @@ const About = ({ content }) => {
   const tControls = useAnimation()
   const iControls = useAnimation()
 
-  // Required for animating the text content
   const tRef = useRef()
   const tOnScreen = useOnScreen(tRef)
 
-  // Required for animating the image
   const iRef = useRef()
   const iOnScreen = useOnScreen(iRef)
 
-  // Only trigger animations if the intro is done or disabled
   useEffect(() => {
     if (isIntroDone) {
       if (tOnScreen) tControls.start({ opacity: 1, y: 0 })

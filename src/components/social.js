@@ -9,7 +9,6 @@ import { socialMedia } from "../../config"
 
 const StyledSocialWrapper = styled.div`
   display: grid;
-  /* Calculate columns, depending on how many profiles there are */
   grid-template-columns: repeat(${({ itemCount }) => itemCount + 1}, auto);
   justify-content: start;
   justify-items: start;
@@ -29,13 +28,11 @@ const StyledSocialWrapper = styled.div`
     overflow: visible;
   }
 
-  /* Workaround: https://stackoverflow.com/questions/38993170/last-margin-padding-collapsing-in-flexbox-grid-layout */
   &::after {
     content: "";
     width: 2.5rem;
   }
 
-  /* Show scrollbar if desktop and wrapper width > viewport width */
   @media (hover: hover) {
     scrollbar-color: ${({ theme }) => theme.colors.scrollBar} transparent; //Firefox only
     &::-webkit-scrollbar {
