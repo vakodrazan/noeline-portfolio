@@ -344,7 +344,12 @@ const Projects = ({ content }) => {
           rel="nofollow noopener noreferrer"
           aria-label="External Link"
         >
-          <Button type="button" textAlign="center" center>
+          <Button
+            type="button"
+            textAlign="center"
+            center
+            aria-label={sectionDetails.frontmatter.buttonText}
+          >
             {sectionDetails.frontmatter.buttonText}
           </Button>
         </motion.a>

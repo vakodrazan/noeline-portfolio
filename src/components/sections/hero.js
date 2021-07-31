@@ -119,6 +119,7 @@ const Hero = ({ content }) => {
                 <Img
                   className="emoji"
                   fluid={frontmatter.icon.childImageSharp.fluid}
+                  aria-label={frontmatter.icon.childImageSharp.fluid}
                 />
               </motion.div>
             </div>
