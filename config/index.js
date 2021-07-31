@@ -46,7 +46,7 @@ module.exports = {
     },
     {
       name: "Mail",
-      url: "mailto:noeline.mar@onja.org",
+      url: "mailto:dev@onja.org",
     },
   ],
 
