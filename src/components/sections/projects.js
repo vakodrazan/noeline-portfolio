@@ -318,7 +318,6 @@ const Projects = ({ content }) => {
                       )}
                     </div>
                   </div>
-                  {/* If image in viewport changes, update state accordingly */}
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
