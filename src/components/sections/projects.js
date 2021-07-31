@@ -343,12 +343,7 @@ const Projects = ({ content }) => {
           rel="nofollow noopener noreferrer"
           aria-label="External Link"
         >
-          <Button
-            type="button"
-            textAlign="center"
-            center
-            aria-label="See more projects on Github"
-          >
+          <Button type="button" textAlign="center" center>
             {sectionDetails.frontmatter.buttonText}
           </Button>
         </motion.a>

@@ -31,7 +31,12 @@ const StyledButton = styled.button`
 `
 
 const Button = ({ onClick, textAlign, center, children }) => (
-  <StyledButton onClick={onClick} textAlign={textAlign} center={center}>
+  <StyledButton
+    aria-label="See more Projects on Github"
+    onClick={onClick}
+    textAlign={textAlign}
+    center={center}
+  >
     {children}
   </StyledButton>
 )
