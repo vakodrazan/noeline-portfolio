@@ -347,7 +347,7 @@ const Projects = ({ content }) => {
             type="button"
             textAlign="center"
             center
-            aria-label={sectionDetails.frontmatter.buttonText}
+            aria-label="See more projects on Github"
           >
             {sectionDetails.frontmatter.buttonText}
           </Button>
