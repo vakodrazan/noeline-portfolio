@@ -14,6 +14,10 @@ const StyledSection = styled.section`
   height: auto;
   background: ${({ theme }) => theme.colors.background};
   margin-top: 4rem;
+
+  .onja {
+    color: blue;
+  }
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
