@@ -26,8 +26,6 @@ const useDarkMode = () => {
         darkSchemeQuery.removeEventListener("change", toggleTheme)
       }
     } else {
-      // backwards compatibility
-      // https://betterprogramming.pub/using-window-matchmedia-in-react-8116eada2588
       darkSchemeQuery.addListener(toggleTheme)
       return () => {
         darkSchemeQuery.removeListener(toggleTheme)

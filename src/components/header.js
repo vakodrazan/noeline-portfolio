@@ -102,7 +102,7 @@ const Header = () => {
       <>
         <StyledBurger
           aria-controls="sidebar"
-          aria-label="sidebar"
+          aria-label="sidebar menu"
           open={open}
           onClick={() => setOpen(!open)}
         >

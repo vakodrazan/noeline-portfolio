@@ -32,9 +32,8 @@ module.exports = {
           trackingId: googleAnalyticsTrackingId,
           cookieName: "gatsby-gdpr-google-analytics",
           anonymize: true,
-          // allowAdFeatures: false,
         },
-        environments: ["production"], // defines the environments where the tracking should be available
+        environments: ["production"],
       },
     },
     {
@@ -46,7 +45,7 @@ module.exports = {
         background_color: colors.lightTheme.background,
         theme_color: colors.lightTheme.primary,
         display: `minimal-ui`,
-        icon: siteIcon, // This path is relative to the root of the site.
+        icon: siteIcon,
       },
     },
     {

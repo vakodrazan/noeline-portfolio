@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
 
-// https://usehooks.com/useOnScreen/
-
 export default (ref, threshold = 0.25) => {
   const [isIntersecting, setIntersecting] = useState(false)
 
@@ -24,6 +22,7 @@ export default (ref, threshold = 0.25) => {
     return () => {
       observer.unobserve(element)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref, threshold])
   return isIntersecting
 }

@@ -17,6 +17,10 @@ const StyledSection = styled.section`
 
   .onja {
     color: blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 

@@ -68,7 +68,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
         padding: 0;
         overflow: visible;
       }
-      /* Show scrollbar if desktop and wrapper width > viewport width */
       @media (hover: hover) {
         scrollbar-color: ${({ theme }) => theme.colors.scrollBar};
         &::-webkit-scrollbar {

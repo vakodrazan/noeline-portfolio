@@ -86,7 +86,6 @@ const Hero = ({ content }) => {
           opacity: 1,
           x: 0,
         })
-        // Animate underlining to hover state
         await uControls.start({
           boxShadow: `inset 0 -2rem 0 ${
             darkMode ? darkTheme.colors.secondary : lightTheme.colors.secondary
