@@ -30,6 +30,9 @@ const StyledSection = styled.section`
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
+  .link {
+    color: blue;
+  }
   && {
     width: 100%;
     height: 100%;
